@@ -1,6 +1,9 @@
 # FrontedAngular
 ## Angular with Flask CRUD mysql
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.10.
+### [Backend project](https://github.com/diegoperea20/Flask-and-React/tree/main/Backend-Flask)
+
+Same project but using  React [here](https://github.com/diegoperea20/Flask-and-React)
 
 <p align="center">
   <img src=".\README-images\tasks.PNG" alt="StepLast">
