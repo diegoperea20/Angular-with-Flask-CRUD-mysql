@@ -1,27 +1,53 @@
 # FrontedAngular
-
+## Angular with Flask CRUD mysql
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.10.
 
-## Development server
+<p align="center">
+  <img src=".\README-images\tasks.PNG" alt="StepLast">
+</p>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+---
+POST
+<p align="center">
+  <img src=".\README-images\addtask.PNG" alt="StepLast">
+</p>
+<p align="center">
+  <img src=".\README-images\addedtask.PNG" alt="StepLast">
+</p>
 
-## Code scaffolding
+---
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+PUT
+<p align="center">
+  <img src=".\README-images\edittask.PNG" alt="StepLast">
+</p>
+<p align="center">
+  <img src=".\README-images\editedtask.PNG" alt="StepLast">
+</p>
 
-## Build
+---
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+DELETE
+<p align="center">
+  <img src=".\README-images\deletedtask.PNG" alt="StepLast">
+</p>
 
-## Running unit tests
+## Options to implement in backend
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Use Dockerfile 
+2. Use virtual enviroments and apply  requirements.txt 
+```python
+#virtual enviroment with conda 
+conda create -n my_enviroment python=3.11.3
 
-## Running end-to-end tests
+pip install -r requirements.txt
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+python app.py
+```
 
-## Further help
+## Steps to implement in fronted
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```python
+npm install
+npm start
+```

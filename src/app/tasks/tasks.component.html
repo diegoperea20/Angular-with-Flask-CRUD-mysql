@@ -1,0 +1,56 @@
+
+<div class="container">
+<h1 class="titulo">Tasks</h1>
+
+<div class="form-container">
+    <form [formGroup]="formulario" (ngSubmit)="enviar()">
+      <input
+        class="inputi"
+        type="text"
+        placeholder="Add a title"
+        autoFocus
+        formControlName="title"
+      />
+      <br/>
+      <br/>
+      <input
+        class="inputi"
+        type="text"
+        placeholder="Add a description"
+        autoFocus
+        formControlName="description"
+      />
+      <br/>
+      <br/>
+      <button class="button">
+        {{ editing ? 'Update' : 'Add' }}
+      </button>
+    </form>
+  </div>
+  <br/>
+  <br/>
+
+<table class="table">
+    <thead>
+        <tr>
+            <!-- <th>ID</th> -->
+            <th>Title</th>
+            <th>Description</th>
+            <th>Operations</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let task of tasksList">
+            <!-- <td>{{task.id}}</td> -->
+            <td>{{task.title}}</td>
+            <td>{{task.description}}</td>
+            <td>
+              <button class="button button-edit" (click)="editTask(task)">Edit</button>
+                <button class="button button-delete" (click)="deleteTask(task.id)" >Delete</button>
+  
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+</div>
